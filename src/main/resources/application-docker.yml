@@ -1,0 +1,16 @@
+spring:
+  sql:
+    init:
+      continue-on-error: 'true'
+      mode: always
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://postgresqldb:5432/robinhood
+    continue-on-error: 'true'
+    platform: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: none
+robin hood:
+  url: https://api.robinhood.com
